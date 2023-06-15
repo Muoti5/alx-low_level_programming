@@ -1,13 +1,13 @@
-#include <stdio.h>
+#include<stdio.h>
 
 /**
-  *main - Starting point
-  *
-  *Description: Prints the size of various types based
-  *on the computer it is compiled and run on.
-  *
-  *Return - Ending point
-  */
+ * main - Entry point of the program
+ *
+ * Description: The printf function prints the size of various types
+ * based on the computer it is compiled and run on.
+ *
+ * Return: Always 0 (indicating successful completion)
+ */
 int main(void)
 {
 	printf("Size of a char: %zu byte(s)\n", sizeof(char));
