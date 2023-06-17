@@ -3,8 +3,11 @@
 #include <stdio.h>
 
 /**
- * main - Prints if number is positive, zero or negative
- * return: Always 0 (Success)
+ * main - Entry point of the program
+ * Description: This function generates a random number and determines whether
+ *              it is positive, negative, or zero.
+ *
+ * Return: Always 0 (indicating successful execution)
  *
  */
 
