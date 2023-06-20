@@ -1,13 +1,13 @@
 #include "main.h"
 
 /**
- *main - Entry point of the program
- *
- *Description: prints the alphabet 10 times,
- *            in lowercase, followed by a new line.
- *
- *Return: Always 0 (Success)
- */
+  *print_alphabet_x10 - Funtion starts here
+  *
+  *Description: prints the alphabet, in lowercase, followed by a new line.
+  *
+  *Return: 0
+  *
+  */
 
 void print_alphabet_x10(void)
 {
