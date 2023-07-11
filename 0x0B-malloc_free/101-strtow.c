@@ -18,10 +18,14 @@ int no_of_words(char *s)
 	for (h = 0; s[h] != '\0'; h++)
 	{
 		if (s[h] == ' ')
+		{
 			quest = 0;
+		}
 		else if (quest == 0)
+		{
 			quest = 1;
 			r++;
+		}
 	}
 	return (r);
 }
