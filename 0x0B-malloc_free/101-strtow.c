@@ -18,19 +18,13 @@ int no_of_words(char *s)
 	for (h = 0; s[h] != '\0'; h++)
 	{
 		if (s[h] == ' ')
-		{
 			quest = 0;
-		}
 		else if (quest == 0)
-		{
 			quest = 1;
 			r++;
-		}
 	}
-
 	return (r);
 }
-
 /**
  * **strtow - splits a string into words
  * @str: string to split
@@ -44,20 +38,14 @@ char **strtow(char *str)
 	int a, b = 0, size = 0, words = 0, c = 0, start, finish;
 
 	while (*(str + size))
-	{
 		size++;
-	}
 	words = no_of_words(str);
 	if (words == 0)
-	{
 		return (0);
-	}
 
 	red = (char **) malloc(sizeof(char *) * (words + 1));
 	if (red == NULL)
-	{
 		return (NULL);
-	}
 
 	for (a  = 0; a <= size; a++)
 	{
@@ -66,15 +54,11 @@ char **strtow(char *str)
 			if (c)
 			{
 				finish = a;
-				ash = (char *) malloc(sizeof(char) *(c + 1));
+				ash = (char *) malloc(sizeof(char) * (c + 1));
 				if (ash == NULL)
-				{
 					return (NULL);
-				}
 				while (start < finish)
-				{
 					*ash++ = str[start++];
-				}
 				*ash = '\0';
 				red[b] = ash - c;
 				b++;
@@ -82,11 +66,8 @@ char **strtow(char *str)
 			}
 		}
 		else if (c++ == 0)
-		{
 			start = a;
-		}
 	}
-
 	red[b] = NULL;
 	return (red);
 }
