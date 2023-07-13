@@ -33,7 +33,6 @@ unsigned int _strlen(char *s)
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
 	unsigned int a = _strlen(s1);
-	unsigned int len = _strlen(s2);
 	unsigned int b;
 	char *space;
 
@@ -41,8 +40,10 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 		return ("");
 	if (s1 == NULL)
 		return ("");
+	if (n >= _strlen(s2))
+		n = _strlen(s2);
 
-	space = malloc(sizeof(char) * (len + a + 1));
+	space = malloc(sizeof(char) * (n + a + 1));
 
 	if (space == NULL)
 		return (NULL);
