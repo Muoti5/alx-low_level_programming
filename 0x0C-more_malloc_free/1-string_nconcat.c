@@ -42,7 +42,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	if (s1 == NULL)
 		return ("");
 
-	space = malloc(len + a + 1);
+	space = malloc(sizeof(char) * (len + a + 1));
 
 	if (space == NULL)
 		return (NULL);
