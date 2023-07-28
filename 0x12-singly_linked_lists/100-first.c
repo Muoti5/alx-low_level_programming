@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 /**
- * Initial - function executed before main
+ * initial - function executed before main
  * Return: no return.
  */
 
