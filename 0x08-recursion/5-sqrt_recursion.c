@@ -6,7 +6,7 @@
  * @s: number to find its square root
  * @i: integer to iterate through s
  *
- * Return: actuall natural square root of s
+ * Return: actual natural square root of s
  */
 
 int actual_sqrt_recursion(int s, int i)
