@@ -14,7 +14,6 @@ unsigned long int base_to_power(unsigned int base, unsigned int power)
 	{
 		return (1);
 	}
-
 	else
 	{
 		return (base * base_to_power(base, power - 1));
@@ -35,22 +34,19 @@ void print_binary(unsigned long int n)
 
 	flag = 0;
 	checker = base_to_power(2, sizeof(unsigned long int) * 8 - 1);
-
 	while (checker != 0)
 	{
 		result = n & checker;
-		
 		if (result == checker)
 		{
 			flag = 1;
 			_putchar('1');
 		}
-
 		else if (flag == 1 || checker == 1)
 		{
 			_putchar('0');
 		}
-		checker >>=1;
+		checker >>= 1;
 	}
 }
 
